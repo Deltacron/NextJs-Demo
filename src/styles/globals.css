@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220; */
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    /* --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
+  }
+}
+
+body {
+  color: #090A09;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+[type='checkbox']:checked {
+  background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="rgb(255,255,255)" xmlns="http://www.w3.org/2000/svg"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"/></svg>');
+}
+
+.css-k1j4kz-control {
+  border-color: #3FD24D !important;
+  box-shadow: 0 0 0 1px #3FD24D !important;
+  border-radius: 12px !important;
+}
+
+.css-1jqq78o-placeholder {
+  color: #A3A4A3 !important;
+  opacity: 1 !important;
+  margin-left: 6px !important;
+}
+
+.css-d7l1ni-option:active {
+  background-color: #E6F9E7 !important;
+}
+
+.css-d7l1ni-option {
+  background-color: #E6F9E7 !important;
+
+}
+
+.css-d7l1ni-option:hover {
+  background-color: #E6F9E7 !important;
+}
+
+.css-13cymwt-control {
+  min-height: 38px;
+  height: 46px;
+  outline: 0 !important;
+  background-color: hsl(0, 0%, 100%);
+  border-color: #19191932;
+  border-radius: 12px !important;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+}
+
+.css-1xc3v61-indicatorContainer {
+  padding: 8px 16px !important;
+}
+
+
+.css-15lsz6c-indicatorContainer {
+  padding: 8px 16px !important;
+}
+
+
+.css-1u9des2-indicatorSeparator {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  width: 0px !important;
+  background-color: hsl(0, 0%, 80%);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
